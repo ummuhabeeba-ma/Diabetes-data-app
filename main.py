@@ -225,7 +225,7 @@ def rep():
     st.write("5.  Comparing the skin thickness level of patients who are alive and of the patients who died, it is found that patients who died had the higher skin thickness level.")
     st.write("6. The number of patients who died increased and is at maximum with diabetes pedigree function ranging between 0.25 to 0.299. But we could also see that with the same range there are more number of patients who are alive. Hence  we can conclude that diabetes pedigree function does not affect patients and may not be a reason for the patients to die.")
     st.write("7. Outcome of diabetes doesnt depend on age, diabetes pedigree function and blood pressure.")
-    st.write("8.  Factors which affects outcome and can lead to death include BMI, glucos level, skin thickness, insulin level and pregnancies.")
+    st.write("8.  Factors which affects outcome and can lead to death include BMI, glucose level, skin thickness, insulin level and pregnancies.")
 def data():
     st.header("ABOUT THE DATASET")
     st.subheader("Anonymized factors of diabetes")
