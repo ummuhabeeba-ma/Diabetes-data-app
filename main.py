@@ -7,7 +7,7 @@ def home():
     st.write("Diabetes is a condition that happens when your blood sugar (glucose) is too high. It develops when your pancreas doesn’t make enough insulin or any at all, or when your body isn’t responding to the effects of insulin properly. Diabetes affects people of all ages. Most forms of diabetes are chronic (lifelong), and all forms are manageable with medications and/or lifestyle changes.")
     image = Image.open('diabetes.png')
     st.image(image,caption='Diabetes')
-df=pd.read_csv("diabetes-vid.csv")
+df=pd.read_csv("C:/Users/Habeeba/Downloads/diabetes-vid.csv")
 df.rename(columns={'DiabetesPedigreeFunction':'Dp',
                    'BloodPressure':'BP'},inplace = True)
 def header():
@@ -233,11 +233,11 @@ def data():
     st.write("Attributes and their description:")
     st.write("1. Pregnancies - Number of pregnancies")
     st.write("2. Glucose - Tells about one's glucose level. A blood glucose test measures the level of glucose (sugar) in your blood. The expected values for normal fasting blood glucose concentration are between 70 mg/dL and 100 mg/dL")
-    st.write("3. Blood Pressure - Tells about the individual's blood pressure. A normal blood pressure level is less than 120/80 mmHg")
+    st.write("3. BloodPressure - Tells about the individual's blood pressure. A normal blood pressure level is less than 120/80 mmHg")
     st.write("4. SkinThickness - Tells about the thickness level of the skin")
     st.write("5. Insulin - Tells about the insulin level in the body. Insulin controls blood sugar levels. However, in people with certain medical conditions, such as diabetes, there can be abnormalities in insulin production or function, leading to high or low insulin levels, which can have significant health implications.")
     st.write("6. BMI - Body Mass Index (BMI) is a person’s weight in kilograms (or pounds) divided by the square of height in meters (or feet)")
-    st.write("7. Diabetes Pedigree Function - Calculates diabetes likelihood depending on the subject's age and his/her diabetic family history.")
+    st.write("7. DiabetesPedigreeFunction - Calculates diabetes likelihood depending on the subject's age and his/her diabetic family history.")
     st.write("8. Age - Age of the patients")
     st.write("9. Outcome - Outcome of the diabetes (whether the patient is alive or dead)")
 st.sidebar.title('Choose anyone')
