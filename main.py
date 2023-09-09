@@ -7,7 +7,7 @@ def home():
     st.write("Diabetes is a condition that happens when your blood sugar (glucose) is too high. It develops when your pancreas doesn’t make enough insulin or any at all, or when your body isn’t responding to the effects of insulin properly. Diabetes affects people of all ages. Most forms of diabetes are chronic (lifelong), and all forms are manageable with medications and/or lifestyle changes.")
     image = Image.open('diabetes.png')
     st.image(image,caption='Diabetes')
-df=pd.read_csv("C:/Users/Habeeba/Downloads/diabetes-vid.csv")
+df=pd.read_csv("diabetes-vid.csv")
 df.rename(columns={'DiabetesPedigreeFunction':'Dp',
                    'BloodPressure':'BP'},inplace = True)
 def header():
